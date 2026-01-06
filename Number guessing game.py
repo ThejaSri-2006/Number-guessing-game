@@ -12,12 +12,14 @@ while count < chance :
     count += 1
     number = int(input("enter a number:"))
     if number == num:
-        print("Exact Answer")
+        print("Exact Answer! You win!")
     elif number < num:
         print("Too low")
     elif number > num:
-        print("Too long")
-    elif count > chance and number != num:
-        print("sorry, you have lot")
+        print("Too high")
+    else:
+        print("Sorry, you have lost. The correct number was",num)
+    
 
     
+
